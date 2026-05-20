@@ -88,6 +88,9 @@
   .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
   @media (max-width:880px){.hero-grid{grid-template-columns:1fr;gap:36px}}
   .eyebrow{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-deep);font-weight:500;margin-bottom:16px}
+  .hero .eyebrow{font-size:.92rem;letter-spacing:.32em;font-weight:600;color:var(--accent-deep);margin-bottom:22px;display:inline-flex;align-items:center;gap:14px}
+  .hero .eyebrow::before{content:"";display:inline-block;width:36px;height:1px;background:var(--accent)}
+  .hero .eyebrow .lift{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;font-style:italic;color:var(--warm);font-size:1.35em;letter-spacing:0;text-transform:none;line-height:0;position:relative;top:.06em;margin:0 .02em}
   .hero h1{margin-bottom:22px}
   .hero-lead{font-size:1.1rem;color:var(--ink-soft);max-width:38ch;margin-bottom:30px}
   .hero-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
@@ -437,7 +440,7 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <div class="eyebrow">Zufrieden mit mir selbst</div>
+        <div class="eyebrow">ZUFRIEDEN <span class="lift">M</span>IT <span class="lift">M</span>IR SELBST</div>
         <h1>So sein dürfen, wie du wirklich bist — und dabei angenommen werden.</h1>
         <p class="hero-lead">Systemisches Coaching und Begleitung in Entwicklungsprozessen. In St. Gallen und online.</p>
         <div class="hero-actions">
